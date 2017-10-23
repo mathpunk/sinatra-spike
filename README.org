@@ -25,6 +25,6 @@ This one is messing with me though:
 curl -i -XPOST http\://localhost\:4567/form\?My\=Data -d "lalala"
 #+END_SRC
 
-First, without the "lalala" my server tells me `411`: it wants a content length. I thought this meant, I had to send `-d "Content-Length: 0"`, but no, "lalala" ends the server complaint.
+First, without the "lalala" my server tells me =411=: it wants a content length. I thought this meant, I had to send =-d "Content-Length: 0"=, but no, "lalala" ends the server complaint.
 
-Second, I can get a value for `params["My"]` yet I can't seem to loop through the keys. I only spent two pomodoros on this project (plus this README) so it's possible I just didn't remember how to write Ruby.
+Second, I can get a value for =params["My"]= yet I can't seem to loop through the keys. I only spent two pomodoros on this project (plus this README) so it's possible I just didn't remember how to write Ruby.
